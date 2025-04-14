@@ -3,25 +3,23 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>VISA TO AMERICA</title>
+  <title>Visa to America</title>
 
-  <!-- Google Fonts: Poppins (consider moving this to your GitHub-hosted CSS later) -->
+  <!-- Google Fonts: Poppins -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
     body {
       margin: 0;
       font-family: 'Poppins', Arial, sans-serif;
-      color: #f1f1f3cf;
+      color: #222;
+      background-color: #fff;
     }
 
     .top-half {
       height: 100vh;
-      background-image: url('https://images.unsplash.com/photo-1504208434309-cb69f4fe52b0?auto=format&fit=crop&w=1950&q=80');
+      background: url('https://images.unsplash.com/photo-1504208434309-cb69f4fe52b0?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
       background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
       position: relative;
       display: flex;
       flex-direction: column;
@@ -34,32 +32,29 @@
       position: absolute;
       top: 20px;
       left: 20px;
-      width: 120px;
+      width: 140px;
       height: auto;
+      z-index: 10;
     }
 
     .top-half h1 {
       font-size: 2.5rem;
-      margin: 10px;
+      color: #fff;
       text-shadow: 2px 2px 5px #000;
       opacity: 0;
       transform: translateY(-50px);
       animation: goDown 3s ease-out forwards;
     }
 
+    .visa-to-america {
+      color: red;
+    }
+
     @keyframes goDown {
-      0% {
-        opacity: 0;
-        transform: translateY(-50px);
-      }
-      100% {
+      to {
         opacity: 1;
         transform: translateY(0);
       }
-    }
-
-    .visa-to-america {
-      color: red;
     }
 
     .header-section h2 {
@@ -68,16 +63,18 @@
       color: red;
     }
 
-    .video-section, .testimony-section {
+    .video-section,
+    .testimony-section {
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       gap: 20px;
       padding: 20px;
       background-color: #f1f1f3d3;
-      flex-wrap: wrap;
     }
 
-    .video-wrapper, .testimony-wrapper {
+    .video-wrapper,
+    .testimony-wrapper {
       flex: 1 1 100%;
       max-width: 560px;
     }
@@ -90,98 +87,57 @@
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
 
-    @media (max-width: 600px) {
-      .video-wrapper, .testimony-wrapper {
-        flex: 1 1 100%;
-        max-width: 100%;
-      }
-    }
-
     .inquire-btn-section {
       text-align: center;
       padding: 30px 0;
       background-color: #f1f1f3d3;
     }
 
-    .inquire-btn-section h2 a {
+    .inquire-btn-section a {
+      display: inline-block;
       font-size: 1rem;
       font-weight: bold;
-      color: #f1f1f3d3;
+      color: #fff;
       text-decoration: none;
       padding: 20px 40px;
       background: rgba(210, 1, 3, 0.85);
-      border: 1px solid #f1f1f3d3;
       border-radius: 50px;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
       transition: all 0.3s ease;
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
 
-    .inquire-btn-section h2 a:hover {
+    .inquire-btn-section a:hover {
       background: rgba(184, 0, 1, 0.95);
       transform: scale(1.1);
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
-      text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
-      border: 2px solid #f1f1f3d3;
     }
 
-    .facebook-section {
+    .facebook-section,
+    .phone,
+    .Website-section {
       text-align: center;
-      margin-top: 40px;
       padding: 20px;
       background-color: #f1f1f3d3;
     }
 
-    .facebook-section h3 {
-      font-size: 1.5rem;
-      color: #08265b;
-      font-weight: bold;
-    }
-
-    .facebook-section p a {
-      color: #08265b;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .facebook-section p a:hover {
-      text-decoration: underline;
-    }
-
-    .phone {
-      text-align: center;
-      padding: 20px;
-      color: #08265b;
-      background-color: #f1f1f3d3;
-    }
-
+    .facebook-section h3,
     .phone h3 {
-      color: #08265b;
-      margin-bottom: 10px;
+      color: #e12323;
       font-weight: bold;
     }
 
-    .phone p {
-      margin: 1px 0;
-      color: #08265b;
-    }
-
-    .phone p a {
+    .facebook-section a,
+    .phone a {
       color: #08265b;
       text-decoration: none;
       font-weight: bold;
     }
 
-    .phone p a:hover {
+    .facebook-section a:hover,
+    .phone a:hover {
       text-decoration: underline;
     }
 
     .Website-section {
-      text-align: center;
-      margin-top: 40px;
-      padding: 20px;
       background-color: #f1f1f3;
       font-weight: bold;
     }
@@ -190,7 +146,7 @@
 <body>
 
   <div class="top-half">
-    <img class="logo" src="https://www.franchise.org/wp-content/uploads/ifa/a395x00000G3A6OAAV.png" alt="VISA TO AMERICA Logo" />
+    <img class="logo" src="images/logo.png" alt="Visa to America Logo">
     <h1>Unlock your American dream with <br><span class="visa-to-america">VISA TO AMERICA</span></h1>
   </div>
 
@@ -200,10 +156,10 @@
 
   <div class="video-section">
     <div class="video-wrapper">
-      <iframe src="https://www.youtube.com/embed/Ib_ESm_Z7lU" title="Visa to America Video 1" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+      <iframe src="https://www.youtube.com/embed/Ib_ESm_Z7lU" title="Visa to America Video 1" allowfullscreen></iframe>
     </div>
     <div class="video-wrapper">
-      <iframe src="https://www.youtube.com/embed/3J-vUYO65rw" title="Visa to America Video 2" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+      <iframe src="https://www.youtube.com/embed/3J-vUYO65rw" title="Visa to America Video 2" allowfullscreen></iframe>
     </div>
   </div>
 
@@ -213,49 +169,47 @@
 
   <div class="testimony-section">
     <div class="testimony-wrapper">
-      <iframe src="https://www.youtube.com/embed/yNE1uvgAzkk" title="Testimony Video 1" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+      <iframe src="https://www.youtube.com/embed/yNE1uvgAzkk" title="Testimony Video 1" allowfullscreen></iframe>
     </div>
     <div class="testimony-wrapper">
-      <iframe src="https://www.youtube.com/embed/J_NPkKWh2RU" title="Testimony Video 2" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+      <iframe src="https://www.youtube.com/embed/J_NPkKWh2RU" title="Testimony Video 2" allowfullscreen></iframe>
     </div>
   </div>
 
   <div class="inquire-btn-section">
-    <h2><a href="https://forms.gle/3rQW2wkuvpNgyFeP6" target="_blank">INQUIRE HERE</a></h2>
+    <a href="https://forms.gle/3rQW2wkuvpNgyFeP6" target="_blank">INQUIRE HERE</a>
   </div>
 
   <div class="facebook-section">
-    <h3 Style="color: #e12323">Facebook Pages:</h3>
+    <h3>Facebook Pages:</h3>
     <p><a href="https://www.facebook.com/profile.php?id=61573519558870" target="_blank">Visa to America - Nathan</a></p>
     <p><a href="https://www.facebook.com/profile.php?id=61573404210476" target="_blank">Visa to America - Isabela</a></p>
     <p><a href="https://www.facebook.com/visatoamerica.ph" target="_blank">Visa to America - PH</a></p>
+  </div>
+
   <div class="phone">
-    <h3 style="color: #e12323">Contact Details:</h3>
+    <h3>Contact Details:</h3>
     <p>VTA Nathan: <a href="tel:09162176215">0916 217 6215</a></p>
     <p>VTA Isabela Branch: <a href="tel:09271718548">0927 171 8548</a></p>
+  </div>
+
   <div class="facebook-section">
-    <h3 style="color: #e12323">Websites:</h3>
+    <h3>Websites:</h3>
     <p><a href="https://visatoamerica.com/" target="_blank">www.visatoamerica.com</a></p>
     <p><a href="https://visatoamerica.com.ph/" target="_blank">www.visatoamerica.com.ph</a></p>
-  <div class="facebook-section">
-    <h3 style="color: #e12323">Visit us at:</h3>
-    <p><a style="color: #e12323">Isabela Branch Office</a></p>
-    <p><a>3rd floor allies bldg. 1, City road center bayang street., Santiago, Philippines</a></p>
-    <p><a style="color: #e12323">Pasig Branch office</a></p>
-    <p><a>Units 2206-2207 22nd Floor, Raffles Corporate Center, F. Ortigas Road, Pasig City</a></p>
-    <p><a style="color: #e12323">Cebu Branch office</a></p>
-    <p><a>Unit 904A Kepwealth Center, Samar Loop Street, Cebu Business Park, Cebu City, Philippines</a></p>
-    <p><a style="color: #e12323">Davao Branch office</a></p>
-    <p><a>Corner Unit Ground Floor, Matina I.T. Park Building 1, Tahimik Avenue, Talomo, Davao City</a></p>
-    <p><a style="color: #e12323">Iloilo Branch office</a></p>
-    <p><a>Units 10 -11 6th Floor, The Grid - Iloilo, Donato Pison Avenue, Brgy. San Rafael, Mandurriao, Iloilo City</a></p>
-    <p><a style="color: #e12323">Lucena Branch office</a></p>
-    <p><a>3rd floor MG building MH Del Pilar St. Brgy. 3 Lucena City Quezon 4301 Philippines</a></p>
-    <p><a style="color: #e12323">Quezon City Branch office</a></p>
-    <p><a>Vensu Place 4th floor Unit 4D-4E #2 Pontiac St. cor. Camaro St. Fairview, Quezon City</a></p>
-    <p><a style="color: #e12323">Zamboanga Branch office</a></p>
-    <p><a>Units 8- 9 3rd Floor, Weelekin Building, Veterans Avenue Ext., Zamboanga City</a></p>
   </div>
-  
+
+  <div class="facebook-section">
+    <h3>Visit us at:</h3>
+    <p><strong>Isabela Branch:</strong> 3rd floor Allies Bldg. 1, City Road Center Bayang Street., Santiago</p>
+    <p><strong>Pasig Branch:</strong> Units 2206-2207, Raffles Corporate Center, Ortigas</p>
+    <p><strong>Cebu Branch:</strong> Unit 904A, Kepwealth Center, Cebu Business Park</p>
+    <p><strong>Davao Branch:</strong> Corner Unit, Matina I.T. Park Building 1, Davao City</p>
+    <p><strong>Iloilo Branch:</strong> Units 10-11, The Grid - Iloilo, Mandurriao</p>
+    <p><strong>Lucena Branch:</strong> 3rd Floor, MG Building, Lucena City</p>
+    <p><strong>Quezon City Branch:</strong> Vensu Place, Fairview, Quezon City</p>
+    <p><strong>Zamboanga Branch:</strong> Weelekin Building, Zamboanga City</p>
+  </div>
+
 </body>
 </html>
